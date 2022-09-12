@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/index.js"></script>
+    <title>form</title>
+</head>
+<body>
+	<div class="container">
+		<form id="form">
+			<h1>Registration</h1>
+			<div class="input-control">
+				<label for="username">username</label>
+				<input id="username" name="username" type="text">
+				<div class="error"></div>
+			</div>
+			
+			<div class="input-control">
+				<label for="email">Email</label>
+				<input id="email" name="email" type="email">
+				<div class="error"></div>
+			</div>
+			
+			<div class="input-control">
+				<label for="password">Password</label>
+				<input id="password" name="password" type="password">
+				<div class="error"></div>
+			</div>
+
+
+			<div class="input-control">
+				<label for="password">Password again</label>
+				<input id="password2" name="password2" type="password">
+				<div class="error"></div>
+			</div>
+			<div>
+				<P>GENDER</P>
+				<input type="radio" id="male" name="gender">
+				<label for="male">MALE</label>
+				<input type="radio" id="female" name="gender">
+				<label for="female">FEMALE</label>
+				<input type="radio" id="other" name="gender">
+				<label for="other">OTHER</label>
+			</div>
+			<br>
+			
+			<div class="input-control">
+				<label for="place">PLACE</label>
+				<select id="place" name="place">
+					<option value="alapuzha">Alapuzha</option>
+					<option value="kochi">Kochi</option>
+					<option value="kollam">Kollam</option>
+					<option value="kottayam">Kottayam</option>
+					<option value="trivandrum">Trivandrum</option>
+					</select>
+			</div><br>
+			<div class="input-control">
+				<textarea name"message" rows="5" cols="30">
+				</textarea>
+			
+			</div>
+			<br>
+			
+			<input type="submit" value="Submit">
+			
+		</form>
+	</div>
+    
+</body>
+</html>
