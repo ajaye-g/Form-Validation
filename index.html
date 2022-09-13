@@ -4,52 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-   
-    <link rel="stylesheet" href="css/styles.css" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/styles.css">
     <script defer src="js/index.js"></script>
-    <title>form</title>
 </head>
 <body>
-	<div class="container">
-		<form id="form">
-			<h1>Registration</h1>
-			<div class="input-control">
-				<label for="username">username</label>
-				<input id="username" name="username" type="text">
-				<div class="error"></div>
-			</div>
-			
-			<div class="input-control">
-				<label for="email">Email</label>
-				<input id="email" name="email" type="email">
-				<div class="error"></div>
-			</div>
-			
-			<div class="input-control">
-				<label for="password">Password</label>
-				<input id="password" name="password" type="password">
-				<div class="error"></div>
-			</div>
+    <div class="container">
+        <form id="form" action="/">
+            <h1>Registration</h1>
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password"name="password" type="password">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password2">Password again</label>
+                <input id="password2"name="password2" type="password">
+                <div class="error"></div>
+            </div>
 
-
-			<div class="input-control">
-				<label for="password">Password again</label>
-				<input id="password2" name="password2" type="password">
-				<div class="error"></div>
-			</div>
-			<div>
-				<P>GENDER</P>
-				<input type="radio" id="male" name="gender">
-				<label for="male">MALE</label>
-				<input type="radio" id="female" name="gender">
-				<label for="female">FEMALE</label>
-				<input type="radio" id="other" name="gender">
-				<label for="other">OTHER</label>
-			</div>
-			<br>
-			
-			<div class="input-control">
+	     <div class="input-control">
 				<label for="place">PLACE</label>
 				<select id="place" name="place">
 					<option value="alapuzha">Alapuzha</option>
@@ -57,19 +41,41 @@
 					<option value="kollam">Kollam</option>
 					<option value="kottayam">Kottayam</option>
 					<option value="trivandrum">Trivandrum</option>
-					</select>
-			</div><br>
-			<div class="input-control">
-				<textarea name"message" rows="5" cols="30">
-				</textarea>
+				</select>
+				
+	     </div>
+	     	    <div class="">
+				<P>GENDER</P>
+				<input type="radio" id="male" name="gender">
+				<label for="male">MALE</label>
+				<input type="radio" id="female" name="gender">
+				<label for="female">FEMALE</label>
+				<input type="radio" id="other" name="gender">
+				<label for="other">OTHER</label>
+	     </div>
+	     <div class="">
+		<p>Known Languages</p>
+		<div class=languages>
+	     		<input type="checkbox" id="language1" name="language1">
+			<label for="language1">English</label>
+	     		<input type="checkbox" id="language2" name="language2">
+			<label for="language2">malayalam</label>
+		</div>
+		<div class=languages>
+	     		<input type="checkbox" id="language3" name="language3">
+			<label for="language3">tamil</label>
+	     		<input type="checkbox" id="language4" name="language4">
+			<label for="language4">hindi</label>
+		</div>
+	     </div> 
+	     <div class="input-control">
+			<p>text area</p>	
+			<textarea name"message" rows="5" cols="30">
+			</textarea>
 			
-			</div>
-			<br>
-			
-			<input type="submit" value="Submit">
-			
-		</form>
-	</div>
-    
+	     </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
 </body>
 </html>
